@@ -1,8 +1,8 @@
 .homeContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
     min-height: 90dvh;
 }

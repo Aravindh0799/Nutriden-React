@@ -8,9 +8,6 @@ const Home = () => {
     return (
         <>
             <div className="packetImageWrapper">
-                <div className="packetImage">
-                    <img src={image} alt="packet img" />
-                </div>
                 <MainContent />
                 <ProductInfo />
             </div>

@@ -29,9 +29,6 @@
 .packetImage img {
     width: 250px;
     height: 400px;
-    position: absolute;
-    left: calc(50% - 110px);
-    top: calc(50% - 200px);
     animation: moveToBottom linear;
     animation-timeline: --packetImageTimeline;
     animation-range: entry 0% exit 100%;
