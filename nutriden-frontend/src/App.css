@@ -83,7 +83,28 @@
     height: 400px;
     animation: moveToBottom linear;
     animation-timeline: --packetImageTimeline;
-    animation-range: entry 10% exit 100%;
+    animation-range: entry 0% exit 100%;
+}
+
+.reviewTimeline {
+    view-timeline-name: --reviewScrollTimeline;
+}
+
+.reviewScrollContainer {
+    animation: scrollReviews linear;
+    animation-timeline: --reviewScrollTimeline;
+    animation-range: entry 0% exit 100%;
+}
+
+@keyframes scrollReviews {
+    35% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
 }
 
 @media screen and (max-width: 700px) {

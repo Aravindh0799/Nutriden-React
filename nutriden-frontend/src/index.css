@@ -90,6 +90,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.card {
+  border: 2px solid;
+  border-image: linear-gradient(125deg,
+      var(--color-tertiary),
+      var(--color-secondary)) 1;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
