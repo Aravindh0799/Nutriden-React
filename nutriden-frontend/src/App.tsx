@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from "./pages/home.tsx"
 import Navbar from "./components/navbar.tsx"
-import image from "./assets/packet.png"
+import Footer from "./components/Footer.tsx"
 
 function App() {
 
@@ -14,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<h1>About Page</h1>} />
       </Routes>
+      <Footer />
     </>
   )
 }

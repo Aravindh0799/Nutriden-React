@@ -1,24 +1,76 @@
 @keyframes moveToBottom {
-    0% {
+    /* 0% {
         transform: translate(0, 0);
-    }
+    } */
 
     25% {
-        transform: translate(-25vw, 35vh);
+        transform: translate(-32vw, 35vh);
     }
 
     50% {
         /* transform: translate(60%, 50vh); */
-        transform: translate(-25vw, 95vh);
+        transform: translate(-32vw, 100vh);
     }
 
     75% {
         /* transform: translate(-50%, 75vh); */
-        transform: translate(-25vw, 95vh);
+        transform: translate(-32vw, 100vh);
     }
 
     100% {
-        transform: translate(-25vw, 95vh);
+        transform: translate(-32vw, 100vh);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    @keyframes moveToBottom {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        25% {
+            transform: translate(-25vw, 70vh);
+        }
+
+        50% {
+            /* transform: translate(60%, 50vh); */
+            transform: translate(0vw, 107vh);
+        }
+
+        75% {
+            /* transform: translate(-50%, 75vh); */
+            transform: translate(0vw, 107vh);
+        }
+
+        100% {
+            transform: translate(0, 107vh);
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    @keyframes moveToBottom {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        25% {
+            transform: translate(-25vw, 35vh);
+        }
+
+        50% {
+            /* transform: translate(60%, 50vh); */
+            transform: translate(0vw, 85vh);
+        }
+
+        75% {
+            /* transform: translate(-50%, 75vh); */
+            transform: translate(0vw, 85vh);
+        }
+
+        100% {
+            transform: translate(0, 85vh);
+        }
     }
 }
 
@@ -31,7 +83,7 @@
     height: 400px;
     animation: moveToBottom linear;
     animation-timeline: --packetImageTimeline;
-    animation-range: entry 0% exit 100%;
+    animation-range: entry 10% exit 100%;
 }
 
 @media screen and (max-width: 700px) {

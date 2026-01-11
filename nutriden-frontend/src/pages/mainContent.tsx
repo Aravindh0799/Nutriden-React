@@ -4,19 +4,24 @@ import image from "../assets/packet.png"
 
 const mainContent = () => {
     return (
-        <div className={`${styles.homeContainer} `}>
-            <div className={styles.leftContent}>
-                <h1>NutriDen</h1>
-                <p>Your Personalized Nutrition Companion</p>
+        <section id='main'>
+            <div className={`${styles.homeContainer} `}>
+                <div className={styles.leftContent}>
+                    <h1>NutriDen</h1>
+                    <p>Fuel Your Day, the Natural Way.</p>
+                </div>
+                <div className="packetImage">
+                    <img src={image} alt="packet img" />
+                </div>
+                <div className={styles.rightContent}>
+                    <p>Complete Daily Nutrition</p>
+                    <p>High-Protein Formula</p>
+                    <p>Balanced Macro Blend</p>
+                    <p>Plant-Based & Clean Ingredients</p>
+                    <p>Rapid Preparation</p>
+                </div>
             </div>
-            <div className="packetImage">
-                <img src={image} alt="packet img" />
-            </div>
-            <div className={styles.rightContent}>
-                <h1>NutriDen</h1>
-                <p>Your Personalized Nutrition Companion</p>
-            </div>
-        </div>
+        </section>
     )
 }
 

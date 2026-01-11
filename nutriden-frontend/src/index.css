@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -14,6 +16,9 @@
 
   --color-primary: #007a53;
   --color-secondary: #00cc36;
+  --color-tertiary: #0091f2;
+  --color-primary-accent: #00b084;
+  --color-secondary-accent: #00504b;
   --color-text-primary: rgba(255, 255, 255, 0.87);
   --color-text-secondary: rgba(255, 255, 255, 0.6);
 }
@@ -46,7 +51,7 @@ body {
     radial-gradient(700px circle at 80% 30%,
       rgba(20, 184, 166, 0.22),
       transparent 45%),
-    radial-gradient(600px circle at 70% 50%,
+    radial-gradient(600px circle at 70% 60%,
       rgba(163, 230, 53, 0.18),
       transparent 50%),
     radial-gradient(700px circle at 85% 85%,
