@@ -4,8 +4,9 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 60px;
     padding: 10px 20px;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: auto;
     position: fixed;
     z-index: 200;
@@ -30,4 +31,53 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 40%;
+}
+
+.navMenu {
+    display: none;
+}
+
+.navMenu img {
+    height: 24px;
+    width: 24px;
+}
+
+.placeHolder {
+    display: none;
+}
+
+.navMenuContainer {
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    padding: 10px;
+    z-index: 1000;
+    background-color: gray;
+    width: 180px;
+}
+
+.navMenuContainer a {
+    color: white;
+}
+
+.navMenuContainer li {
+    padding: 4px 0px;
+}
+
+.navMenuContainer a:hover {
+    color: var(--color-secondary);
+}
+
+@media screen and (max-width: 700px) {
+    .navLinks {
+        display: none;
+    }
+
+    .navButton {
+        display: none;
+    }
+
+    .navMenu {
+        display: block;
+    }
 }

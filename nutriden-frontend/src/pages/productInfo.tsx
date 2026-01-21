@@ -10,23 +10,23 @@ const ProductInfo = () => {
                 </div>
                 <div className={styles.rightContainer}>
                     <div className={styles.leftContent}>
-                        <div className='card'>
+                        <div className='glassCard'>
                             <img src={leafIcon}></img>
-                            <p>Supports Weight & Appetite Control — fiber and protein help keep you fuller, longer.</p>
+                            <p className='gradientText'>Supports Weight & Appetite Control — fiber and protein help keep you fuller, longer.</p>
                         </div>
-                        <div className='card'>
+                        <div className='glassCard'>
                             <img src={leafIcon}></img>
-                            <p>Versatile Usage — perfect in breakfast bowls, baking, or post-workout shakes.</p>
+                            <p className='gradientText'>Versatile Usage — perfect in breakfast bowls, baking, or post-workout shakes.</p>
                         </div>
                     </div>
                     <div className={styles.rightContent}>
-                        <div className='card'>
+                        <div className='glassCard'>
                             <img src={leafIcon}></img>
-                            <p>Naturally Satisfying Taste & Texture — smooth, rich nut flavor without heaviness.</p>
+                            <p className='gradientText'>Naturally Satisfying Taste & Texture — smooth, rich nut flavor without heaviness.</p>
                         </div>
-                        <div className='card'>
+                        <div className='glassCard'>
                             <img src={leafIcon}></img>
-                            <p>Eco-Friendly & Sustainable — responsibly sourced nuts and minimal processing.</p>
+                            <p className='gradientText'>Eco-Friendly & Sustainable — responsibly sourced nuts and minimal processing.</p>
                         </div>
                     </div>
                 </div>

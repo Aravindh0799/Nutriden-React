@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
 
 :root {
   font-family: "Montserrat", sans-serif;
@@ -45,16 +47,16 @@ body {
     radial-gradient(800px circle at 25% 15%,
       rgba(52, 211, 153, 0.30),
       transparent 40%),
-    radial-gradient(500px circle at 40% 35%,
-      rgba(52, 211, 73, 0.3),
-      transparent 40%),
-    radial-gradient(700px circle at 80% 30%,
+    radial-gradient(700px circle at 100% 20%,
       rgba(20, 184, 166, 0.22),
       transparent 45%),
-    radial-gradient(600px circle at 70% 60%,
+    radial-gradient(500px circle at 45% 28%,
+      rgba(52, 211, 73, 0.3),
+      transparent 40%),
+    radial-gradient(600px circle at 25% 55%,
       rgba(163, 230, 53, 0.18),
       transparent 50%),
-    radial-gradient(700px circle at 85% 85%,
+    radial-gradient(700px circle at 65% 85%,
       rgba(20, 184, 166, 0.22),
       transparent 45%),
     radial-gradient(600px circle at 10% 100%,
@@ -79,6 +81,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  outline: none;
 }
 
 button:hover {
@@ -87,7 +90,7 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background-color: var(--color-secondary);
 }
 
 .card {
@@ -98,6 +101,47 @@ button:focus-visible {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
 }
+
+.gradientBorder {
+  border: 2px solid;
+  border-image: linear-gradient(125deg,
+      var(--color-tertiary),
+      var(--color-secondary)) 1;
+}
+
+.glassCard {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+}
+
+.gradientText {
+  background: linear-gradient(90deg, var(--color-tertiary), var(--color-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input[type="checkbox"] {
+  scale: 1.5;
+  translate: 4px 8px;
+  background-color: transparent;
+  accent-color: var(--color-primary);
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 2px solid var(--color-primary);
+  outline: none;
+}
+
+/* 
+input[type="text"]:focus,
+input[type="text"]:focus-visible,
+input[type="password"]:focus,
+input[type="password"]:focus-visible {
+  border: 2px solid var(--color-secondary);
+} */
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -26,22 +26,63 @@
     align-items: center;
 }
 
-.scrollContainer div {
+.scrollContainer .cardContainer {
     height: 300px;
     width: 600px;
-    margin: 10px;
     flex-shrink: 0;
-    margin-left: 100px;
+    margin-right: 40px;
 }
 
-.scrollContainer div:nth-child(5) {
+/* .scrollContainer div:nth-child(5) {
     background-color: transparent;
-}
+} */
 
 .scrollContainer div:nth-child(6) {
     background-color: transparent;
 }
 
-.scrollContainer div:last-child {
+.scrollContainer div:nth-child(7) {
     background-color: transparent;
+}
+
+.cardContent {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cardContent img {
+    height: 60px;
+    width: 60px;
+}
+
+.avatarBorder {
+    width: fit-content;
+    display: inline-flex;
+    border: 3px solid var(--color-secondary);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .scrollContainer .cardContainer {
+        width: 500px;
+        height: fit-content;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .scrollContainer .cardContainer {
+        width: 300px;
+        height: fit-content;
+        margin-right: 10px;
+    }
+
+    .scrollContainer {
+        /* flex-direction: column; */
+    }
 }

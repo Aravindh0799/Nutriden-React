@@ -1,6 +1,7 @@
 
 import styles from '../styles/mainContent.module.css'
 import image from "../assets/packet.png"
+import packetImage from "../assets/nutr-packet.png"
 
 const mainContent = () => {
     return (
@@ -14,11 +15,11 @@ const mainContent = () => {
                     <img src={image} alt="packet img" />
                 </div>
                 <div className={styles.rightContent}>
-                    <p>Complete Daily Nutrition</p>
-                    <p>High-Protein Formula</p>
-                    <p>Balanced Macro Blend</p>
-                    <p>Plant-Based & Clean Ingredients</p>
-                    <p>Rapid Preparation</p>
+                    <p className='gradientText'>Complete Daily Nutrition</p>
+                    <p className='gradientText'>High-Protein Formula</p>
+                    <p className='gradientText'>Balanced Macro Blend</p>
+                    <p className='gradientText'>Plant-Based & Clean Ingredients</p>
+                    <p className='gradientText'>Rapid Preparation</p>
                 </div>
             </div>
         </section>

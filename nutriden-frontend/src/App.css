@@ -4,21 +4,48 @@
     } */
 
     25% {
-        transform: translate(-32vw, 35vh);
+        transform: translate(-400px, 35vh);
     }
 
     50% {
         /* transform: translate(60%, 50vh); */
-        transform: translate(-32vw, 100vh);
+        transform: translate(-400px, 100vh);
     }
 
     75% {
         /* transform: translate(-50%, 75vh); */
-        transform: translate(-32vw, 100vh);
+        transform: translate(-400px, 100vh);
     }
 
     100% {
-        transform: translate(-32vw, 100vh);
+        transform: translate(-400px, 100vh);
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    @keyframes moveToBottom {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        25% {
+            transform: translate(-300px, 70vh);
+        }
+
+        50% {
+            /* transform: translate(60%, 50vh); */
+            transform: translate(-300px, 100vh);
+        }
+
+        75% {
+            /* transform: translate(-50%, 75vh); */
+            transform: translate(-300px, 100vh);
+        }
+
+        100% {
+            transform: translate(-300px, 100vh);
+        }
     }
 }
 
@@ -34,16 +61,16 @@
 
         50% {
             /* transform: translate(60%, 50vh); */
-            transform: translate(0vw, 107vh);
+            transform: translate(0vw, 100vh);
         }
 
         75% {
             /* transform: translate(-50%, 75vh); */
-            transform: translate(0vw, 107vh);
+            transform: translate(0vw, 100vh);
         }
 
         100% {
-            transform: translate(0, 107vh);
+            transform: translate(0, 100vh);
         }
     }
 }
@@ -60,16 +87,16 @@
 
         50% {
             /* transform: translate(60%, 50vh); */
-            transform: translate(0vw, 85vh);
+            transform: translate(0vw, 105vh);
         }
 
         75% {
             /* transform: translate(-50%, 75vh); */
-            transform: translate(0vw, 85vh);
+            transform: translate(0vw, 105vh);
         }
 
         100% {
-            transform: translate(0, 85vh);
+            transform: translate(0, 105vh);
         }
     }
 }
@@ -113,5 +140,11 @@
         height: 240px;
         left: calc(50% - 75px);
         top: calc(50% - 120px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .reviewScrollContainer {
+        animation: none;
     }
 }

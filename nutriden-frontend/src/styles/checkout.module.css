@@ -1,0 +1,91 @@
+.checkoutContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    background-image:
+        radial-gradient(800px circle at 25% 15%,
+            rgba(52, 211, 153, 0.30),
+            transparent 40%),
+        radial-gradient(700px circle at 100% 60%,
+            rgba(20, 184, 166, 0.22),
+            transparent 45%),
+        radial-gradient(500px circle at 35% 95%,
+            rgba(52, 211, 73, 0.3),
+            transparent 40%);
+}
+
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.paymentDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartCard,
+.paymentCard {
+    width: 500px;
+    min-height: 500px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.cartContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    min-height: 104px;
+}
+
+.cartContent img {
+    flex: 2;
+}
+
+.cartContent div {
+    flex: 8
+}
+
+.quantityContainer {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.quantityContainer button {
+    padding: 4px 16px;
+}
+
+.error {
+    color: red;
+    padding-top: 8px;
+}
+
+.paymentCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.priceDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.priceDiv :nth-child(2) {
+    width: 60px;
+}
