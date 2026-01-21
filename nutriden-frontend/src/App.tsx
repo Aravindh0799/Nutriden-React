@@ -11,7 +11,7 @@ import RequireAuth from './hooks/requireAuth.tsx'
 function App() {
 
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Routes>
         <Route path='/login' element={<Login />} />
@@ -23,7 +23,7 @@ function App() {
         </Route>
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   )
 }
 
