@@ -1,7 +1,7 @@
 'use client'
 
 import { useAuth } from '../context/authProvider';
-import styles from '../styles/navbar.module.css'
+import styles from '../styles/Navbar.module.css'
 import { useNavigate } from "react-router-dom";
 import hamIcon from "../assets/more.png"
 import closeIcon from "../assets/close.png"
