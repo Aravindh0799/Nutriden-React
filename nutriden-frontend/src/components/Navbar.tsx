@@ -16,6 +16,7 @@ const navbar = () => {
         setNavMenu(prev => !prev)
     }
 
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>NutriDen</div>
