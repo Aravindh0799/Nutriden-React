@@ -8,7 +8,7 @@ import ReviewSection from "./reviewSection.tsx"
 const Home = () => {
     return (
         <>
-            <div className="packetImageWrapper">
+            <div>
                 <MainContent />
                 <ProductInfo />
             </div>

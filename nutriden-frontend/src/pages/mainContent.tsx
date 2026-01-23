@@ -12,7 +12,7 @@ const mainContent = () => {
                     <p>Fuel Your Day, the Natural Way.</p>
                 </div>
                 <div className="packetImage">
-                    <img src={image} alt="packet img" />
+                    <img className="packetImageItem" src={image} alt="packet img" />
                 </div>
                 <div className={styles.rightContent}>
                     <p className='gradientText'>Complete Daily Nutrition</p>

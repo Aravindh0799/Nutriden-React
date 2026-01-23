@@ -32,8 +32,7 @@ const navbar = () => {
                     : (<button className={styles.loginButton} onClick={() => navigate("/login")}>Login</button>)}
             </div>
             <div className={styles.navMenu}>
-                {navMenu ? (<img src={closeIcon} alt="" onClick={toggleNavMenu} />)
-                    : (<img src={hamIcon} alt="" onClick={toggleNavMenu} />)}
+                <img className={`${styles.menuIcon} ${navMenu ? styles.closeIcon : styles.hamicon}`} src={navMenu ? closeIcon : hamIcon} alt="" onClick={toggleNavMenu} />
             </div>
             {navMenu ? (
                 <div className={`${styles.navMenuContainer} glassCard`}>

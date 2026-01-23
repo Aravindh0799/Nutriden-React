@@ -46,14 +46,36 @@
     display: none;
 }
 
+.menuIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hamIcon {
+    transform: scale(1);
+}
+
+.closeIcon {
+    transform: scale(1);
+}
+
 .navMenuContainer {
     position: absolute;
     top: 65px;
     right: 10px;
     padding: 10px;
     z-index: 1000;
-    background-color: gray;
+    background-color: black;
+    border: 2px solid var(--color-secondary);
     width: 180px;
+}
+
+.navMenu .closeIcon {
+    height: 18px;
+    width: 22px;
 }
 
 .navMenuContainer a {
