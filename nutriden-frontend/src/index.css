@@ -84,14 +84,14 @@ button {
   outline: none;
 }
 
-button:hover {
+button:not(:disabled):hover {
   background-color: var(--color-primary);
 }
 
-button:focus,
+/* button:focus,
 button:focus-visible {
   background-color: var(--color-secondary);
-}
+} */
 
 .card {
   border: 2px solid;

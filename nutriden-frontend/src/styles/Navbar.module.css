@@ -69,7 +69,7 @@
     padding: 10px;
     z-index: 1000;
     background-color: black;
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--color-primary);
     width: 180px;
 }
 
@@ -80,6 +80,8 @@
 
 .navMenuContainer a {
     color: white;
+    display: block;
+    width: 100%;
 }
 
 .navMenuContainer li {

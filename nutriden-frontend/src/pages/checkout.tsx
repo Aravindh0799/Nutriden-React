@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from 'react'
 import styles from "../styles/checkout.module.css"
 import image from "../assets/react.svg"
@@ -99,6 +101,10 @@ const Checkout = () => {
         };
     }, [cartItems]);
 
+    const handlePayment = () => {
+        alert("hi")
+    }
+
 
     return (
         <div className={styles.checkoutContainer}>
@@ -147,7 +153,9 @@ const Checkout = () => {
                         <p>Total to be paid</p>
                         <p>: {finalValue}</p>
                     </div>
-                    <br />
+                    <button onClick={handlePayment} disabled={total === 0 ? true : false}>
+                        Pay Now
+                    </button>
                 </div>
             </div>
         </div>
